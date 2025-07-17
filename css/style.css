@@ -52,8 +52,8 @@ header h1 {
     font-size: 1.5em;
     font-weight: normal;
     color: #0d47a1; /* Dark blue color */
-    border-left: 3px solid #0d47a1; /* Matching border color */
-    padding-left: 15px;
+    /* border-left: 3px solid #0d47a1; Matching border color */
+    /* padding-left: 15px; */
     margin-top: 10px;
 }
 
@@ -99,11 +99,11 @@ header h1 {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    align-items: flex-start; /* Align items to the top */
+    /* align-items: center;  */
 }
 
 .goal-item {
-    flex-basis: 22%;
+    flex-basis: 25%;
     text-align: center;
     display: flex; /* Use flexbox for vertical alignment */
     flex-direction: column; /* Stack items vertically */
@@ -127,17 +127,23 @@ header h1 {
 
 .goal-item h3 {
     font-size: 1.5em;
+    height: 150px;
     margin-bottom: 15px;
     flex-grow: 1; /* Allow title to grow and fill space */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.goal-p {
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+}
 
 .goal-item p {
     font-size: 1em;
     line-height: 1.5;
-    text-align: left; /* Justify text for better readability */
+    text-align: left;
 }
 
 /* Founding Institution Section */
