@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# Office documents
+*.pptx
+*.pdf
+~$*.pptx

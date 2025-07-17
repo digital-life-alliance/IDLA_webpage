@@ -1,0 +1,277 @@
+/* Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.page {
+    width: 100%;
+    /* min-height: 100vh; */ /* We'll control height more directly */
+    display: flex;
+    flex-direction: column;
+}
+
+#page1 {
+     background-color: #fff;
+}
+
+#page2 {
+    background-color: #f0f2f5;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 20px 80px;
+    overflow: hidden;
+    background-image: url('../figures/MJ.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+header .logo img {
+    max-width: 150px; /* Adjust as needed */
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #0d47a1; /* Dark blue color */
+    border-left: 3px solid #0d47a1; /* Matching border color */
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.hero-content h3 {
+    font-size: 1.8em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Goals Section */
+.goals {
+    background-color: #f0f2f5;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.goals h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.goal-item {
+    flex-basis: 22%;
+    text-align: center;
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.goal-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder */
+    margin: 0 auto 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Placeholder IDs for specific goal images */
+#goal-sim { background-image: url('../figures/MJ_20250716_151013.png'); }
+#goal-data { background-image: url('../figures/MJ_20250716_154531.png'); }
+#goal-model { background-image: url('../figures/MJ_20250716_160033.png'); }
+#goal-ai { background-image: url('../figures/MJ_20250716_160806.png'); }
+
+.goal-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Allow title to grow and fill space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left; /* Justify text for better readability */
+}
+
+/* Founding Institution Section */
+.founding-institution {
+    background-image: url('../figures/gs.png'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+}
+
+.founding-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Increased transparency */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guangzhou-logo img {
+    max-width: 150px;
+}
+
+.founding-text h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.founding-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Join Us Section */
+.join-us {
+    padding: 60px 80px;
+    background-color: #f0f2f5; /* Set a base background color */
+}
+
+.join-us h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.join-us-intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.join-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('../figures/MJ_20250716_113150.png'); /* Apply background to this container */
+    background-size: cover;
+    background-position: center;
+    padding: 40px; /* Add padding to the container */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.join-column {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    flex-basis: 45%;
+}
+
+.join-column h4 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e0e0e0; /* Grey background for titles */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.join-column > p {
+    text-align: center;
+    font-size: 1.1em;
+    min-height: 80px;
+}
+
+.join-details h5, .how-to-join h5 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.join-details ul, .how-to-join ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.join-details li, .how-to-join li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.join-details li::before, .how-to-join li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 80px;
+    text-align: center;
+}
+
+footer nav {
+    margin-bottom: 15px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
