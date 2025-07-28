@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Basic Styles */
 body, html {
     margin: 0;
@@ -203,6 +207,9 @@ header h1 {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.join-us-background {
     background-image: url('../figures/MJ_20250716_113150.png'); /* Apply background to this container */
     background-size: cover;
     background-position: center;
@@ -257,6 +264,92 @@ header h1 {
     position: absolute;
     left: 0;
     color: #4CAF50;
+}
+
+/* How to Apply Section */
+.how-to-apply {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-to-apply h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.how-to-apply > ol {
+    list-style-type: none; /* Changed from decimal to none */
+    padding-left: 0;
+    counter-reset: step-counter;
+}
+
+.how-to-apply > ol > li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 50px; /* Add padding to make space for the number */
+}
+
+.how-to-apply > ol > li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0d47a1; /* Blue background for numbers */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.how-to-apply strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.how-to-apply ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.how-to-apply ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.how-to-apply ul li::before {
+    content: '→'; /* Arrow symbol */
+    color: #0d47a1; /* Blue arrow */
+    background-color: transparent; /* No background for the arrow */
+    width: auto;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 1;
+    top: 2px; /* Adjust vertical alignment */
+}
+
+
+.how-to-apply a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.how-to-apply a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
