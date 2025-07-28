@@ -37,7 +37,7 @@ header {
     text-align: left;
     padding: 20px 80px;
     overflow: hidden;
-    background-image: url('../figures/MJ.png');
+    background-image: url('/IDLA_webpage/figures/MJ.png');
     background-size: cover;
     background-position: center;
 }
@@ -124,10 +124,10 @@ header h1 {
 }
 
 /* Placeholder IDs for specific goal images */
-#goal-sim { background-image: url('../figures/MJ_20250716_151013.png'); }
-#goal-data { background-image: url('../figures/MJ_20250716_154531.png'); }
-#goal-model { background-image: url('../figures/MJ_20250716_160033.png'); }
-#goal-ai { background-image: url('../figures/MJ_20250716_160806.png'); }
+#goal-sim { background-image: url('/IDLA_webpage/figures/MJ_20250716_151013.png'); }
+#goal-data { background-image: url('/IDLA_webpage/figures/MJ_20250716_154531.png'); }
+#goal-model { background-image: url('/IDLA_webpage/figures/MJ_20250716_160033.png'); }
+#goal-ai { background-image: url('/IDLA_webpage/figures/MJ_20250716_160806.png'); }
 
 .goal-item h3 {
     font-size: 1.5em;
@@ -152,7 +152,7 @@ header h1 {
 
 /* Founding Institution Section */
 .founding-institution {
-    background-image: url('../figures/gs.png'); /* Replace with actual image */
+    background-image: url('/IDLA_webpage/figures/gs.png'); /* Replace with actual image */
     background-size: cover;
     background-position: center;
     padding: 80px;
@@ -210,7 +210,7 @@ header h1 {
 }
 
 .join-us-background {
-    background-image: url('../figures/MJ_20250716_113150.png'); /* Apply background to this container */
+    background-image: url('/IDLA_webpage/figures/MJ_20250716_113150.png'); /* Apply background to this container */
     background-size: cover;
     background-position: center;
     padding: 40px; /* Add padding to the container */
